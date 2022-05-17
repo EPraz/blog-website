@@ -7,10 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Invoices } from "./routes/Invoices";
 import Expenses from "./routes/Expenses";
 import Invoice from "./routes/Invoice";
+import Navbar from "./components/Navbar/Navbar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
+    <Navbar />
     <Routes>
       <Route path="/blog-website" element={<App />}>
         <Route path="expenses" element={<Expenses />} />

@@ -1,4 +1,4 @@
-let invoices = [
+export let blog_data = [
     {
       name: "Santa Monica",
       number: 1995,
@@ -31,18 +31,18 @@ let invoices = [
     },
   ];
   
-  export function getInvoices() {
-    return invoices;
+  export function getData() {
+    return blog_data;
   }
 
-  export function getInvoice(number) {
-      return invoices.find(
-          (invoice) => invoice.number === number
+  export function getDataID(id) {
+      return blog_data.find(
+          (data) => data.number === id
       )
   }
 
-  export function deleteInvoice(number) {
-    invoices = invoices.filter(
-      (invoice) => invoice.number !== number
+  export function deleteData(number) {
+    deleteData = blog_data.filter(
+      (data) => data.number !== number
     );
   }
