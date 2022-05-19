@@ -1,5 +1,5 @@
 .app__navbar {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -16,14 +16,33 @@
 
 .app__navbar-header_top-left_side {
     flex: 3;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+
+}
+
+.app__navbar-header_top-left_side a {
+    /* border: 1px solid red; */
+    padding: .25rem;
+    background-color: var(--color-yellow);
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.04rem;
+    border-radius: 5px;
+}
+
+.app__navbar-header_top-left_side a span {
+    font-style: italic;
+    font-weight: 500;
 }
 
 .app__navbar-header_top-logo_img {
     flex: 9;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
     height: 100%;
@@ -36,10 +55,38 @@
 }
 
 .app__navbar-header_top-right_side {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     flex: 3;
-    justify-content: flex-end;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.app__navbar-header_top-right_side .social_media .icons_social {
+    background-color: var(--color-yellow);
+    /* padding: .25rem; */
+    height: 25px;
+    color: var(--color-white);
+}
+
+.app__navbar-header_top-right_side .social_media .icons_social:first-child {
+    margin: 0 10px;
+}
+
+.app__navbar-header_top-right_side .login_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .25rem;
+}
+
+.app__navbar-header_top-right_side .login_section a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+.app__navbar-header_top-right_side .login_section a:first-child {
+    margin-right: 2rem;
 }
 
 .app__navbar-header_bottom {
@@ -48,4 +95,9 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
+}
+
+.separator {
+    border: 2px solid black;
+    margin: 1rem 0;
 }
