@@ -12,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 1rem 2rem;
+  background-color: var(--color-background);
 }
 
 code {
@@ -20,10 +21,15 @@ code {
 }
 
 :root {
-  --color-primary: #fff;
-  --color-gray: #434343;
-  --color-yellow: #ffd034;
-  --color-secondary: #333333;
-  --color-black: #000000;
-  --color-light-gray: #999999;
+  --color-background: #f6f6f6;
+  --color-gray: #2f2f2f;
+  --color-black: #111111;
+  --color-golden: #ffcb74;
+  /* --color-primary: #fff; */
+  /* --color-gray: #434343; */
+  /* --color-yellow: #ffd034; */
+  /* --color-secondary: #333333; */
+  /* --color-black: #000000; */
+  /* --color-light-gray: #999999; */
 }
+

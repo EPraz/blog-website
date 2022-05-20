@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 // import { getInvoice } from '../../constants/data';
 import { blog_data } from '../../constants/data_1';
 import { images } from '../../constants';
@@ -10,6 +10,8 @@ import { CgFacebook, CgTwitter } from 'react-icons/cg'
 const Navbar = () => {
 
     let Menu_Data = blog_data;
+
+    let Menu = ['Collection', "Story", "News", "Melancholy", "Contact", "Shop"]
 
     // console.log('getData:' + Data);
 
@@ -40,13 +42,16 @@ const Navbar = () => {
 
             <div className='app__navbar-header_bottom'>
                 <ul>
-                    {Menu_Data.map((menu_item) => (
-                        <Link
-                            style={{ padding: '1rem' }}
-                            to={"/blog-website/" + menu_item.number}
-                            key={menu_item.number}>
-                            {menu_item.number}
-                        </Link>
+                    {Menu.map((menu_item) => (
+                        <li>
+                            <NavLink
+                                className={({isActive }) => isActive ? "isActive" : ""}
+                                // activeClassName = "isActive"
+                                to={"/blog-website/" + menu_item}
+                                key={menu_item}>
+                                {menu_item}
+                            </NavLink>
+                        </li>
                     ))}
                 </ul>
             </div>

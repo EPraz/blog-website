@@ -8,14 +8,15 @@ import { Invoices } from "./routes/Invoices";
 import Expenses from "./routes/Expenses";
 import Invoice from "./routes/Invoice";
 import Navbar from "./components/Navbar/Navbar";
+import Homepage from "./components/Homepage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Navbar />
     <Routes>
-      <Route path="/blog-website" element={<App />}>
-        <Route path="expenses" element={<Expenses />} />
+      <Route path="/blog-website" element={<Homepage />}>
+        <Route path="collection" element={<Expenses />} />
         <Route path="invoices"  element={<Invoices />} >
           <Route index element={
             <main style={{padding: '1rem'}}>

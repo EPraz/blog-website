@@ -1,4 +1,4 @@
-import logo from '../assets/images/logo_img.png';
+import logo from '../assets/images/logo_1.png';
 
 
 export default {
