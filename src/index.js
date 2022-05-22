@@ -33,6 +33,7 @@ root.render(
             </main>
           } />
       </Route>
+      <Route path="/blog-website/collection/:url" element={<Expenses />} />
     </Routes>
   </BrowserRouter>
 );

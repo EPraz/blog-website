@@ -21,6 +21,10 @@ code {
 }
 
 :root {
+
+  /* --font-base:  */
+
+  --color-light-gray:  rgb(169, 168, 168);
   --color-background: #f6f6f6;
   --color-gray: #2f2f2f;
   --color-black: #111111;
