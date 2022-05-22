@@ -1,11 +1,13 @@
 import React from 'react'
-import Slider from './slider/Slider'
+import ArticlesSlider from './ArticlesSlider/ArticlesSlider'
+import SimpleSlider from './slider/SimpleSlider'
 
 const Homepage = () => {
   return (
     <div>
         Hello World!!!
-        <Slider />
+        <SimpleSlider />
+        <ArticlesSlider />
     </div>
   )
 }

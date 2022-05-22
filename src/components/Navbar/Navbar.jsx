@@ -9,7 +9,7 @@ import { CgFacebook, CgTwitter } from 'react-icons/cg'
 
 const Navbar = () => {
 
-    let Menu_Data = blog_data;
+    // let Menu_Data = blog_data;
 
     let Menu = ['Collection', "Story", "News", "Melancholy", "Contact", "Shop"]
 
@@ -42,8 +42,8 @@ const Navbar = () => {
 
             <div className='app__navbar-header_bottom'>
                 <ul>
-                    {Menu.map((menu_item) => (
-                        <li>
+                    {Menu.map((menu_item, index) => (
+                        <li key={index}>
                             <NavLink
                                 className={({isActive }) => isActive ? "isActive" : ""}
                                 // activeClassName = "isActive"
