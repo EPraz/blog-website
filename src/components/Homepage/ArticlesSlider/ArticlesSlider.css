@@ -5,11 +5,20 @@
     height: 100%;    
 } */
 
+/* .fixed_div {
+    height: 850px;
+} */
+
+/* .fixed_div {
+    height: 850px;
+    
+} */
+
 .mySwiper {
+    
     padding: 1rem 0;
     border-top: 3px solid var(--color-light-gray);
     border-bottom: 3px solid var(--color-light-gray);
-
 }
 
 .mySwiper .swiper-pagination {
@@ -28,12 +37,13 @@
     /* bottom: 10%; */
     z-index: 9999;
     height: 30px;
-    color: var(--color-golden);
+    color: var(--color-black);
     /* background: var(--color-golden); */
 }
 
-.mySwiper .swiper-button-next:after, .swiper-button-prev:after {
+.mySwiper .swiper-button-next:after, .mySwiper .swiper-button-prev:after {
     font-size: 1rem;
+    font-weight: 900;
 }
 
 .app__articlesSwiper .container {

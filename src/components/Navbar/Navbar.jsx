@@ -22,8 +22,11 @@ const Navbar = () => {
                     <Link to=''>Shop <span>Online</span> <AiOutlineCaretRight /></Link>
                 </div>
 
+
                 <div className="app__navbar-header_top-logo_img">
-                    <img src={images.logo} alt="" />
+                    <Link to="/blog-website">
+                        <img src={images.logo} alt="Logo Website" />
+                    </Link>
                 </div>
 
                 <div className='app__navbar-header_top-right_side'>
@@ -45,7 +48,7 @@ const Navbar = () => {
                     {Menu.map((menu_item, index) => (
                         <li key={index}>
                             <NavLink
-                                className={({isActive }) => isActive ? "isActive" : ""}
+                                className={({ isActive }) => isActive ? "isActive" : ""}
                                 // activeClassName = "isActive"
                                 to={"/blog-website/" + menu_item}
                                 key={menu_item}>

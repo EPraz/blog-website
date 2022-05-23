@@ -9,6 +9,7 @@ import Expenses from "./routes/Expenses";
 import Invoice from "./routes/Invoice";
 import Navbar from "./components/Navbar/Navbar";
 import Homepage from "./components/Homepage";
+import SinglePage from "./components/SinglePage/SinglePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -33,7 +34,7 @@ root.render(
             </main>
           } />
       </Route>
-      <Route path="/blog-website/collection/:url" element={<Expenses />} />
+      <Route path="/blog-website/collection/:url" element={<SinglePage />} />
     </Routes>
   </BrowserRouter>
 );
