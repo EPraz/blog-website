@@ -1,0 +1,27 @@
+.app__footer {
+    margin: 2rem 0 0 0;
+    padding: .8rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 5px solid black;
+    border-bottom: 10px solid black;
+
+}
+
+.app__footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.app__footer p {
+    margin: 0 .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black);
+    font-weight: 500;
+}

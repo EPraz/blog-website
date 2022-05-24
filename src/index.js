@@ -10,6 +10,7 @@ import Invoice from "./routes/Invoice";
 import Navbar from "./components/Navbar/Navbar";
 import Homepage from "./components/Homepage";
 import SinglePage from "./components/SinglePage/SinglePage";
+import Footer from "./components/Footer/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -36,6 +37,7 @@ root.render(
       </Route>
       <Route path="/blog-website/collection/:url" element={<SinglePage />} />
     </Routes>
+    <Footer />
   </BrowserRouter>
 );
 

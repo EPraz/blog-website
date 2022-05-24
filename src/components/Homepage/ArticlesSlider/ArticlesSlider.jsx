@@ -145,7 +145,12 @@ const ArticlesSlider = () => {
                 className="mySwiper"
             >
 
-                {articles_list_filtered.length !== 0 ? articles_list : <h2>Article Not Found</h2>}
+                {articles_list_filtered.length !== 0 ?
+                    articles_list :
+                    <div className='not_found'>
+                        <h2>Article Not Found</h2>
+                    </div>
+                }
 
             </Swiper>
         </div>

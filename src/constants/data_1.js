@@ -14,7 +14,7 @@ export let blog_data = [
   {
     title: "Winter Madness Price Reduction",
     date: "November 10, 2011",
-    feature_image: images.image_1,
+    feature_image: images.image_2,
     id: 2,
     url: "winter-madness-price-reduction",
     excerpt:
@@ -24,7 +24,7 @@ export let blog_data = [
   {
     title: "The brand new arholma green",
     date: "November 10, 2011",
-    feature_image: images.image_1,
+    feature_image: images.image_3,
     id: 3,
     url: "the-brand-new-arholma-green",
     excerpt:
