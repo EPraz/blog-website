@@ -2,10 +2,10 @@ import React from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router'
 import { Link } from 'react-router-dom';
 import { getDataURL } from '../../constants/data_1';
-import "./SinglePage.css"
+import "./SinglePageReverse.css"
 import {AiFillFacebook} from 'react-icons/ai'
 
-const SinglePage = () => {
+const SinglePageReverse = () => {
 
     let navigate = useNavigate();
     let location = useLocation();
@@ -13,11 +13,11 @@ const SinglePage = () => {
     let single_page = getDataURL(params.url);
 
     return (
-        <section className='app__singlePage'>
-            <main className='app__singlePage-container'>
-                <article className='app__singlePage-content'>
-                    <h2 className='app__singlePage-title'>{single_page.title}</h2>
-                    <div className='app__singlePage-share_buttons'>
+        <section className='app__singlePageReverse'>
+            <main className='app__singlePageReverse-container'>
+                <article className='app__singlePageReverse-content'>
+                    <h2 className='app__singlePageReverse-title'>{single_page.title}</h2>
+                    <div className='app__singlePageReverse-share_buttons'>
 
                     <Link  className='disabled' to >
                         <AiFillFacebook className='icon' />
@@ -26,7 +26,7 @@ const SinglePage = () => {
                     </div>
                     <p>{single_page.full_info}</p>
                 </article>
-                <figcaption className='app__singlePage-image'>
+                <figcaption className='app__singlePageReverse-image'>
                     <img src={single_page.feature_image} alt="Feature Image" />
                 </figcaption>
             </main>
@@ -34,4 +34,4 @@ const SinglePage = () => {
     )
 }
 
-export default SinglePage
+export default SinglePageReverse

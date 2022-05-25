@@ -95,8 +95,25 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-    /* border: 1px solid red; */
-    
+}
+
+.app__navbar-header_bottom .just_space {
+    width: 15%;
+}
+
+.app__navbar-header_bottom input {
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: black;
+    padding: .3rem .8rem;
+    font-size: .8rem;
+}
+
+.app__navbar-header_bottom input:active {
+    border: none;
+    border: 1px solid var(--color-golden);
+    background-color: white;
 }
 
 .app__navbar-header_bottom ul {
@@ -126,10 +143,6 @@
 
 .app__navbar-header_bottom ul li a.isActive {
     color: #e9531e;
-    /* border-bottom: 1px solid var(--color-black); */
-    /* margin-bottom: -1px; */
-    
-
 }
 
 .separator {

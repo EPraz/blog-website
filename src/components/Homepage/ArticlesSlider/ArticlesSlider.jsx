@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import Slider from 'react-slick';
 import { images } from '../../../constants';
 import "./ArticlesSlider.css";
 // Import Swiper React components
@@ -15,24 +14,16 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/a11y';
 import { blog_data, getTitleID } from '../../../constants/data_1';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
-// import { getTitleID } from '../../../constants/data_1';
-// import 'swiper/css/autoplay';
-// import 'swiper/css/effect-fade';
-// import 'swiper/css/loop'; 
-const carousel_images = [images.image_1, images.image_2, images.image_3, images.image_3, images.image_3];
 
 const articles = blog_data;
 
 const ArticlesSlider = () => {
 
-    // const [searchParams, setSearchParams] = useState();
-    // const [searchMe] = useState(['title']);
     const [filter, setFilter] = useState('');
 
-
-    // useEffect(() => {
-    //     // our fetch codes
-    // }, []);
+    useEffect(() => {
+        // our fetch codes
+    }, []);
 
     const handleChange = (e) => {
         let filter = e.target.value;
@@ -44,19 +35,6 @@ const ArticlesSlider = () => {
         }
     }
 
-
-    // const handleSearch = (event) => {
-    //     let filter = event.target.value;
-    //     console.log(filter)
-    //     if (filter) {
-    //         setSearchParams((filter));
-    //     } else {
-    //         setSearchParams({});
-    //     }
-    // }
-
-
-    // SwiperCore.use([EffectFade, Navigation, Pagination]);
     SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
     const handleOrder = (num) => {
@@ -69,7 +47,6 @@ const ArticlesSlider = () => {
 
     function QueryLink({ to, ...props }) {
         let location = useLocation();
-        // let title_id = getTitleID(article.id);
         return <Link to={to + location.search} {...props} />
     }
 
@@ -111,7 +88,9 @@ const ArticlesSlider = () => {
     return (
         <div className='fixed_div'>
             {/* <input type="search" placeholder='Search For...' value={searchParams.get('filter') || ""} onChange={handleSearch} /> */}
-            <input type="search" placeholder='Search For...' value={filter} onChange={handleChange} />
+            <div className='input_box'>
+                <input type="search" placeholder='Search For...' value={filter} onChange={handleChange} />
+            </div>
 
             <Swiper
                 // install Swiper modules
@@ -129,19 +108,14 @@ const ArticlesSlider = () => {
                         width: 768,
                         slidesPerView: 2,
                     },
-                    // when window width is >= 768px
+                    // when window width is >= 1440px
                     1440: {
                         width: "100%",
                         slidesPerView: 4,
                     },
                 }}
                 navigation
-                // loop
-                // autoplay={{delay: 3000}}
                 pagination={{ clickable: true }}
-                // scrollbar={{ draggable: true }}
-                // onSwiper={(swiper) => console.log(swiper)}
-                // onSlideChange={() => console.log('slide change')}
                 className="mySwiper"
             >
 

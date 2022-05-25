@@ -1,25 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Invoices } from "./routes/Invoices";
+// import { Invoices } from "./routes/Invoices";
 import Expenses from "./routes/Expenses";
-import Invoice from "./routes/Invoice";
+// import Invoice from "./routes/Invoice";
 import Navbar from "./components/Navbar/Navbar";
 import Homepage from "./components/Homepage";
 import SinglePage from "./components/SinglePage/SinglePage";
 import Footer from "./components/Footer/Footer";
+import ArticlesBottom from "./components/ArticlesBottom/ArticlesBottom";
+import SinglePageReverse from "./components/SinglePage_Reverse/SinglePageReverse";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Navbar />
     <Routes>
-      <Route path="/blog-website" element={<Homepage />}>
-        <Route path="collection" element={<Expenses />} />
-        <Route path="invoices"  element={<Invoices />} >
+      <Route path="/blog-website" element={<Homepage />} />
+        {/* <Route path="collection" element={<Expenses />} /> */}
+        {/* <Route path="invoices"  element={<Invoices />} >
           <Route index element={
             <main style={{padding: '1rem'}}>
               <p>Select an Invoice</p>
@@ -34,9 +36,13 @@ root.render(
               <p>There's Nothing Here!</p>
             </main>
           } />
-      </Route>
-      <Route path="/blog-website/collection/:url" element={<SinglePage />} />
+      </Route> */}
+        <Route path="/blog-website/collection/:url" element={<SinglePage />} />
+      {/* </Route> */}
+        <Route path="/blog-website/articles/:url" element={<SinglePageReverse />} />
+        {/* <Route path="/blog-website/name" element={< />} /> */}
     </Routes>
+    <ArticlesBottom />
     <Footer />
   </BrowserRouter>
 );

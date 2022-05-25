@@ -1,4 +1,4 @@
-.app__singlePage {
+.app__singlePageReverse {
     width: 100%;
     border-top: 2.5px solid rgb(163, 161, 161);
     border-bottom: 2.5px solid rgb(163, 161, 161);
@@ -7,47 +7,49 @@
     margin-bottom: 2.5rem;
 }
 
-.app__singlePage-title {
-    font-size: 4.5rem;
+.app__singlePageReverse-title {
+    font-size: 3.5rem;
     text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
-.app__singlePage-container {
+.app__singlePageReverse-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
 
 }
 
-.app__singlePage-image {
+.app__singlePageReverse-image {
     width: 60%;
     height: 100%;
     padding: 1rem;
 }
 
-.app__singlePage-image img {
+.app__singlePageReverse-image img {
     width: 100%;
     height: 100%;
     outline: 2.5px solid rgb(163, 161, 161);
 }
 
-.app__singlePage-content {
+.app__singlePageReverse-content {
     width: 40%;
     height: 100%;
     padding: 0 2.5rem;
 }
 
-.app__singlePage-share_buttons {
+.app__singlePageReverse-share_buttons {
     display: flex;
-    justify-content: end;
+    justify-content: start;
     border-bottom: 2.5px solid rgb(163, 161, 161);
     height: 100%;
     width: 100%;
     padding: .5rem;
 }
 
-.app__singlePage-content a {
+.app__singlePageReverse-content a {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -58,11 +60,11 @@
     font-size: .8rem;
 }
 
-.app__singlePage-content a .icon {
+.app__singlePageReverse-content a .icon {
     margin-right: .3rem;
 }
 
-.app__singlePage-content p {
+.app__singlePageReverse-content p {
     font-size: 1rem;
     color: var(--color-black);
     line-height: 1.6;
